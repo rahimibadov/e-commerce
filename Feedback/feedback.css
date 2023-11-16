@@ -1,0 +1,136 @@
+@import url("../Home/home.css");
+.feedback-main {
+    width: 100%;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.feedback-main .feedback-container {
+    width: 95%;
+    padding: 10px;
+}
+.feedback-main .add-coment-container {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+
+}
+.feedback-main .add-coment-container input {
+    width: 40%;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0 5px 0 5px;
+}
+.feedback-main .add-coment-container textarea {
+    width: 55%;
+    height: 65px;
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    resize: none;
+
+}
+.feedback-main .button-box {
+    width: 50%;   
+}
+.feedback-main .button-box #btn-add {
+    width: 30%;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+    background-color:  rgb(21, 213, 213);
+    cursor: pointer;
+    transition: 0.5s ease all;
+    border-radius: 3px;
+
+}
+.feedback-main .button-box #btn-add:hover {
+    background-color: rgb(205, 138, 13);
+}
+.feedback-main .add-coment-container input,
+.feedback-main .add-coment-container textarea {
+    border: 2px solid rgb(35, 35, 206);
+    transition: 1s ease all;
+    text-transform: capitalize;
+}
+
+.feedback-main .add-coment-container input:focus,
+.feedback-main .add-coment-container textarea:focus {
+    border: 2px solid rgb(51, 142, 142);
+}
+
+.list{
+    width: 87%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.list li{
+    width: 400px;
+    gap: 4px;
+    background: rgba(0, 0, 0, 80%);
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.list li p{
+    width: 100%;
+    word-wrap: break-word;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: white;
+}
+
+.list li p:nth-child(1){
+    font-weight: 500;
+    font-size: 25px;
+}
+.list li p:nth-child(2){
+    font-size: 20px;
+}
+.list li p:nth-child(3){
+    font-size: 17px;
+}
+
+@media only screen and (max-width:1400px) {
+    .list li{
+        width: 45%;
+    }
+}
+@media only screen and (max-width:650px) {
+    .list li{
+        width: 95%;
+    }
+    .feedback-main .add-coment-container input {
+        width: 75%;
+    }
+    .feedback-main .add-coment-container textarea {
+        width: 90%;
+    
+    }
+    .feedback-main .button-box {
+        width: 80%;
+        
+    }
+    .feedback-main .button-box #btn-add {
+        width: 60%;
+
+    
+    }
+}

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link rel="stylesheet" href="../Home/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="icon" href="../Gallery/black.png">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <title>Ecommerce.az</title>
+</head>
+
+<body>
+
+    <!-- /* search input desktop and responsive started */ -->
+
+    <input type="search" class="search-input" id="search-input" placeholder="Search...">
+
+    <!-- /* search input desktop and responsive end */ -->
+
+
+    <!-- /* registration-form desktop and responsive started */ -->
+    <div class="registration-form-container registration-active">
+        <ion-icon name="close-outline" id="close-registration"></ion-icon>
+        <div class="header-registration">
+            <h2>Qeydiyyat</h2>
+        </div>
+        <form id="form" class="form" action="/register.py" method="post">
+            <div class="form-control">
+                <label for="Username">Username</label>
+                <input type="text" placeholder="Username" id="username">
+                <ion-icon id="succes-icon" name="checkmark-circle-outline"></ion-icon>
+                <ion-icon id="error-icon" name="alert-circle-outline"></ion-icon>
+                <small>Error message!</small>
+            </div>
+
+            <div class="form-control">
+                <label for="Email">Email</label>
+                <input type="email" placeholder="@gmail.com" id="email">
+                <ion-icon id="succes-icon" name="checkmark-circle-outline"></ion-icon>
+                <ion-icon id="error-icon" name="alert-circle-outline"></ion-icon>
+                <small>Error message!</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password">
+                <ion-icon id="succes-icon" name="checkmark-circle-outline"></ion-icon>
+                <ion-icon id="error-icon" name="alert-circle-outline"></ion-icon>
+                <small>Error message!</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password2">Confirm Password</label>
+                <input type="password" placeholder="Password two" id="password2">
+                <ion-icon id="succes-icon" name="checkmark-circle-outline"></ion-icon>
+                <ion-icon id="error-icon" name="alert-circle-outline"></ion-icon>
+                <small>Error message!</small>
+            </div>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    <!-- /* registration-form desktop and responsive end */ -->
+
+    <!-- CART started  -->
+
+    <div class="cart-container">
+
+        <div class="cart-head">
+            <h2>Products in Cart</h2>
+            <ion-icon name="close-outline" id="closeCart"></ion-icon>
+        </div>
+
+
+    <div class="product-list-components-parent">
+        <!--  -->
+    </div>
+        
+        <div class="cart-footer">
+            <h3 id="sub-total">Sub Total: </h3>
+            <span id="total-price-value">0 $</span>
+        </div>
+        <button id="clear-product" type="button">Clear</button>
+    </div>
+
+
+
+
+    <!-- CART end  -->
+
+
+    <!-- /* header and nav desktop and responsive started */ -->
+
+    <header>
+
+        
+        <div class="nav-box">
+            <div class="dark-white-search-box">
+                <ion-icon id="hamburger" name="reorder-four-outline"></ion-icon>
+
+                <div class="dark-white-search-box-2-in">
+                    <div class="dark-white-box">
+                        <i class="bi bi-brightness-high-fill" id="toggle-ball-sun"></i>
+                    </div>
+
+                    <div class="search-box">
+                        <ion-icon id="search-btn" name="search-outline"></ion-icon>
+                    </div>
+
+                    <button type="button" id="cartButton">
+                        <span id="cart-Items">0</span> 
+                        <ion-icon id="cartIcon" name="cart-outline"></ion-icon>
+                    </button>      
+                </div> 
+            </div>
+
+
+            <nav class="navbar">
+                <ion-icon id="close-btn" name="reorder-four-outline"></ion-icon>
+                <ul class="navbar-nav">
+                    <li class="active"><a id="home-a" href="./home.html">Home</a></li>
+                    <li><a id="atag" href="../About us/about.html">About</a></li>
+                    <li><a id="atag" href="../Catalog/catalog.html">Catalog</a></li>
+                    <li><a id="atag" href="../Feedback/feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="jumbotron">
+            <div class="container text-center">
+
+                <!-- carousel started -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <div id="testimonial-slider" class="owl-carousel">
+
+                                    <div id="testimonial-1" class="testimonial">
+
+                                        <span>Özünə butik ziyarəti hədiyyə et</span>
+                                        <div class="testimonial-button-box">
+                                            <a href="#">Məhsullarımız</a>
+                                            <a href="#">Kolleksiya</a>
+                                        </div>
+                                    </div>
+                                    <div id="testimonial-2" class="testimonial">
+
+                                        <span>Geyimdə stiliniz danışsın.</span>
+                                        <div class="testimonial-button-box">
+                                            <a href="#">Məhsullarımız</a>
+                                            <a href="#">Kolleksiya</a>
+                                        </div>
+                                    </div>
+                                    <div id="testimonial-3" class="testimonial">
+
+                                        <span>Stil sahibi olmaq üçün sizinləyik.</span>
+                                        <div class="testimonial-button-box">
+                                            <a href="#">Məhsullarımız</a>
+                                            <a href="#">Kolleksiya</a>
+                                        </div>
+                                    </div>
+                                    <div id="testimonial-4" class="testimonial">
+
+                                        <span>Klassik və modern cizgilər birarada!</span>
+                                        <div class="testimonial-button-box">
+                                            <a href="#">Məhsullarımız</a>
+                                            <a href="#">Kolleksiya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- carousel end -->
+
+            </div>
+
+        </div>
+    </header>
+    <!-- /* header and nav desktop and responsive end */ -->
+
+
+
+    <!-- /* Main desktop and responsive started */ -->
+
+    <main>
+        <!-- SECTION-1 started -->
+
+        <section class="show products-parent-dom" id="sec-1">
+
+                
+
+                <!-- <div class="api-parent-card">
+                    <img src="../Gallery/aksess.jpg" alt="photo-api">
+                    <div class="api-child-footer">
+                        <span id="api-product-name">Trouses</span>
+                        <span id="api-product-price">173 $</span>
+                        <button class="btn-add-to-cart">
+                            <ion-icon id="cartApiIcon" name="cart-outline"></ion-icon>
+                        </button>
+                        
+                    </div>
+                </div>
+
+                <div class="api-parent-card">
+                    <img src="../Gallery/aksess.jpg" alt="photo-api">
+                    <div class="api-child-footer">
+                        <span id="api-product-name">Trouses</span>
+                        <span id="api-product-price">173 $</span>
+                        <button class="btn-add-to-cart">
+                            <ion-icon id="cartApiIcon" name="cart-outline"></ion-icon>
+                        </button>
+                        
+                    </div>
+                </div>
+
+                <div class="api-parent-card">
+                    <img src="../Gallery/aksess.jpg" alt="photo-api">
+                    <div class="api-child-footer">
+                        <span id="api-product-name">Trouses</span>
+                        <span id="api-product-price">173 $</span>
+                        <button class="btn-add-to-cart">
+                            <ion-icon id="cartApiIcon" name="cart-outline"></ion-icon>
+                        </button>
+                        
+                    </div>
+                </div>
+
+                <div class="api-parent-card">
+                    <img src="../Gallery/aksess.jpg" alt="photo-api">
+                    <div class="api-child-footer">
+                        <span id="api-product-name">Trouses</span>
+                        <span id="api-product-price">173 $</span>
+                        <button class="btn-add-to-cart">
+                            <ion-icon id="cartApiIcon" name="cart-outline"></ion-icon>
+                        </button>
+                        
+                    </div>
+                </div>
+                
+                <div class="api-parent-card">
+                    <img src="../Gallery/aksess.jpg" alt="photo-api">
+                    <div class="api-child-footer">
+                        <span id="api-product-name">Trouses</span>
+                        <span id="api-product-price">173 $</span>
+                        <button class="btn-add-to-cart">
+                            <ion-icon id="cartApiIcon" name="cart-outline"></ion-icon>
+                        </button>
+                        
+                    </div>
+                </div> -->
+
+
+
+
+        </section>
+        <!-- SECTION-1 finished -->
+
+        <!-- SECTION-2 started -->
+        <section id="sec-2" name="for-animation-box">
+
+            <div class="row-1">
+                <div class="" id="row-child">
+                    <h3>Yüksək Keyfiyyət</h3>
+                    <a href="#">
+                        <button type="button">Ətraflı</button>
+                    </a>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="" id="row-child">
+                    <h3>Sərfəli Qiymətlər</h3>
+                    <a href="#">
+                        <button type="button">Ətraflı</button>
+                    </a>
+                </div>
+            </div>
+            <div class="row-3">
+                <div class="" id="row-child">
+                    <h3>Lüks Brendlər</h3>
+                    <a href="#">
+                        <button type="button">Ətraflı</button>
+                    </a>
+                </div>
+                <!-- SECTION-2 finished  -->
+            </div>
+        </section>
+
+        <!-- section-3 started -->
+        <section class="" id="sec-3" name="for-animation-box">
+            <div class="sec-3-child">
+                <h2>İnnovativ Məhsullar</h2>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa veniam eveniet officiis iste alias,
+                    dolore fugit laboriosam et dolorum voluptatibus!
+                </h5>
+                <a href="#">
+                    <button type="submit">Kataloq</button>
+                </a>
+            </div>
+            <div class="sec-3-child">
+                <div class="right">
+                    <img src="../Gallery/ayaq.png" alt="">
+                    <span>bla bla</span>
+                    <span>199.9</span>
+                    <button type="button">Click</button>
+                </div>
+                <div class="right">
+                    <img src="../Gallery/ayaq2.png" alt="">
+                    <span>bla bla</span>
+                    <span>299.9</span>
+                    <button type="button">Click</button>
+                </div>
+            </div>
+        </section>
+        <!-- section-3 end -->
+
+        <!-- section-4 started -->
+
+        <section class="" id="sec-4" name="for-animation-box">
+            <div class="sec-4-child">
+                <h2>Yeni Məhsullar</h2>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.!</h5>
+            </div>
+
+
+            <div class="sec-4-child">
+
+                <div class="right">
+                    <img src="../Gallery/ev-aksesuarlari-2018.jpg" alt="">
+                    <span>bla bla</span>
+                    <span>199.9</span>
+                    <button type="button">Click</button>
+                </div>
+                <div class="right">
+                    <img src="../Gallery/el-yapimi-ev-aksesuaarlari-06.jpg" alt="">
+                    <span>bla bla</span>
+                    <span>299.9</span>
+                    <button type="button">Click</button>
+                </div>
+                <div class="right">
+                    <img src="../Gallery/aksess.jpg" alt="">
+                    <span>bla bla</span>
+                    <span>99.9</span>
+                    <button type="button">Click</button>
+                </div>
+                <div class="right">
+                    <img src="../Gallery/turuncu-ev-aksesuarlari.jpg" alt="">
+                    <span>bla bla</span>
+                    <span>99.9</span>
+                    <button type="button">Click</button>
+                </div>
+            </div>
+        </section>
+        <!-- section-4 end -->
+    </main>
+
+    <!-- -----------------MAIN finished---------------- -->
+
+
+
+
+
+    <!-- registration succes complated started-->
+
+    <div class="registration-complated-box">
+        <h2>Emeliyyat ugurludur!</h2>
+        <ion-icon id="complated-icon" name="checkmark-circle-outline"></ion-icon>
+    </div>
+
+    <!-- registration succes complated end-->
+
+    <!-- popup started -->
+    <div class="popup-registration">
+        <ion-icon name="close-outline" id="close-popup"></ion-icon>
+        <h3>Qeydiyyatdan kecin!</h3>
+        <button id="go-to-registration" type="button">Klik edin!</button>
+    </div>
+    <!-- popup end -->
+
+
+    <!-- /* footer started */ -->
+
+    <footer class="" name="for-animation-box">
+        <div class="footer-child-1">
+            <div class="front">
+                <img src="../Gallery/photo-.jpg">
+            </div>
+
+            <div class="back">
+                <div class="back-child">
+                    <button type="button">Request</button>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates mollitia modi possimus
+                        rerum exercitationem quae fuga sunt laborum saepe? Ratione inventore ullam porro enim ab
+                        excepturi autem dolorem nisi consectetur!</span>
+
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-child-2">
+            <div class="footer-child-2-childs">
+                <h2>Contact us</h2>
+                <div class="icon-box" id="icon-box-1">
+                    <a href="tel:+994555555555">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </a>
+                    <a href="https://wa.me/+99455555555?text= Mehsullar barede melumat almaq istiyirem">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                    <a href="mailto:mehemmed045@outlook.com">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-child-3-childs">
+                <h2>Follow us</h2>
+                <div class="icon-box">
+                    <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-child-4-childs">
+                <h2>Send message</h2>
+                <div class="footer-input">
+                    <input type="text" placeholder="write anything">
+                    <button type="button">Send</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- /* footer end */ -->
+
+    <!-- Chatbot started -->
+
+    <ion-icon id="chat-icon-open" name="chatbox-ellipses-outline"></ion-icon>
+
+    <div class="chatbot-container">
+        <ion-icon id="chat-icon-close" name="close-circle-outline"></ion-icon>
+
+        <div class="chatbot-image-box">
+            <ion-icon id="bot-icon" name="logo-discord"></ion-icon>
+        </div>
+
+        <div class="chatbot-monitor">
+            <li>
+                <p id="ptag-bot-default" style="background-color: #e26d1f;">Chatbot sizi salamlayir👋,Buyurun!😉</p>
+            </li>
+        </div>
+
+        <div class="textarea-btn-container">
+            <textarea id="textarea-bot" placeholder="Contact me"></textarea>
+
+            <button id="chat-send-button" type="button">Send</button>
+        </div>
+
+    </div>
+
+
+    <!-- Chatbot end -->
+
+
+
+    <!-- Arrow icon scrool smoohth started -->
+
+    <a href="#" class="to-top">
+        <ion-icon name="arrow-up-circle-outline"></ion-icon>
+    </a>
+
+    <!-- Arrow icon scrool smoohth end -->
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="../Home/home.js"></script>
+    <script src="./data.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

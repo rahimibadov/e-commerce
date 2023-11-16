@@ -1,0 +1,6 @@
+@import url("../Home/home.css");
+.detail-main {
+    width: 100%;
+    height: 900px;
+    background-color: rgb(125, 159, 32);
+}
