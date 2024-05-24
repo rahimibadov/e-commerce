@@ -38,16 +38,7 @@ toggleDarkWhite.addEventListener("click", function () {
             spanTags[i].style.color = "black";
         }
 
-        /*
-                aTags.forEach(()=>{
-                    let sum = 0;
-                    aTags[sum].style.color = "black";
-                });
-        
-                spanTags.forEach((i)=>{
-                    spanTags[i].style.color = "black";
-                });
-        */
+    
     } else {
         bodyTag.style.background = "black";
         bodyTag.style.color = "white";

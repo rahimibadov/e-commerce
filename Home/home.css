@@ -36,12 +36,20 @@
       transform: translate(-50%, -50%);
   }
 
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 850px) {
       #search-input {
-          width: 55%;
-          left: 38%;
+          left: 28%;
       }
   }
+
+  @media only screen and (max-width: 390px) {
+      #search-input {
+          width: 25%;
+          font-size: 16px;
+          left: 24%;
+      }
+  }
+
 
   /* !search input desktop and responsive end */
 
