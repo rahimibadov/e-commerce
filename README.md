@@ -1,4 +1,3 @@
-# shopping-e-commerce
 
 <h1>Functional e-commerce web application</h1>
 
@@ -9,6 +8,7 @@ All designs and shapes are not copy.
 <h3>Technologies:</h3>
 
 <p>
+  ```
 -HTML
 --Fontawesome
 -CSS
@@ -16,6 +16,7 @@ All designs and shapes are not copy.
 -Javascript
 --ionicons
 --jquery
+  ```
 </p>
 
 ![](ecommerce.gif)
